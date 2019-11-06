@@ -1,0 +1,98 @@
+1.	
+package Tybsc;
+
+public class Operations {
+	int add(int a , int b )
+	{
+		return (a + b);
+	}
+	String Concat(String s1 , String s2 )
+	{
+		return (s1 + s2);
+	}
+}
+
+package Tybsc;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class OperationsTest {
+
+	@Test
+	public void test() {
+		Operations obj=new Operations();
+		int r= obj.add(20,30);
+		assertEquals(50, r);
+		String result=obj.Concat("Modaser", "Sadat");
+		assertEquals("ModaserSadat", result);
+}}
+2.	
+
+package Tybsc;
+
+public class Rectangle {
+int l,b;
+int getlength()
+{
+	return(l);
+}
+int getBreadth()
+{
+	return(b);
+}
+
+void setlength(int a)
+{
+l=a;
+}
+void setBreadth(int x)
+{
+	b=x;
+}
+int Calarea()
+{
+	return(l * b);
+}
+}
+
+3.	
+
+package Tybsc;
+
+public class Cube {
+	int a;
+	int getedge()
+	{
+		return(a);
+	}
+	void setedge(int b)
+	{
+		a=b;
+	}
+	int CubeVolume()
+	{
+		return(a*a*a);
+	}
+	int CubeArea()
+	{
+		return(6*a*a);
+	}
+}
+package Tybsc;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CubeTest {
+
+	@Test
+	public void test() {
+		Cube1 obj=new Cube1();
+		obj.setedge(4);
+		int v=obj.CubeVolume();
+		int a=obj.CubeArea();
+		assertEquals(64, v);
+		assertEquals(96, a);}}
