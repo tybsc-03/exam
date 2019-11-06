@@ -1,3 +1,4 @@
+c
 First create java projectthen Packagethen Class
 Right Click on Project NameBuild PathAdd External ArchivesSelect all jar files in Selenium Folder and import it.
 package selinum;
